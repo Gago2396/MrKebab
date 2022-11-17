@@ -112,7 +112,7 @@ public class IAComportamiento : MonoBehaviour
                     EnviaPuntos();
                 }
                 
-                Debug.Log(reloj.tiempoRestante);
+                //Debug.Log(reloj.tiempoRestante);
             }
             else
             {
