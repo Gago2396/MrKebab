@@ -14,29 +14,33 @@ public class Pedidos : MonoBehaviour
         
     }
 
-    public string pedido(int numero)
+    public string pedido(int numero, out List<string> ingredientes)
     {
         string pedido = string.Empty;
-
+        ingredientes = new List<string>();
         switch(numero){
             case 1:
                 Debug.Log(Random.Range(0, 4));
-                pedido += ingredientes1[Random.Range(0, 4)] + "\n";
-                pedido += ingredientes1[Random.Range(0, 4)] + "\n";
+                ingredientes.Add(ingredientes1[Random.Range(0, 4)]);
+                ingredientes.Add(ingredientes1[Random.Range(0, 4)]);
                 break;
             case 2:
-                pedido += ingredientes1[Random.Range(0, 4)] + "\n";
-                pedido += ingredientes1[Random.Range(0, 4)] + "\n";
-                pedido += ingredientes2[Random.Range(0, 2)] + "\n";
+                ingredientes.Add(ingredientes1[Random.Range(0, 4)]);
+                ingredientes.Add(ingredientes1[Random.Range(0, 4)]);
+                ingredientes.Add(ingredientes2[Random.Range(0, 2)]);
                 break;
             case 3:
-                pedido += ingredientes1[Random.Range(0, 4)] + "\n";
-                pedido += ingredientes1[Random.Range(0, 4)] + "\n";
-                pedido += ingredientes2[Random.Range(0, 2)] + "\n";
-                pedido += ingredientes3[Random.Range(0, 2)] + "\n";
+                ingredientes.Add(ingredientes1[Random.Range(0, 4)]);
+                ingredientes.Add(ingredientes1[Random.Range(0, 4)]);
+                ingredientes.Add(ingredientes2[Random.Range(0, 2)]);
+                ingredientes.Add(ingredientes3[Random.Range(0, 2)]);
                 break;
         }
-
+        ingredientes.Sort();
+        foreach (string item in ingredientes)
+        {
+            pedido += item + "\n";
+        }
         return pedido;
     }
 }

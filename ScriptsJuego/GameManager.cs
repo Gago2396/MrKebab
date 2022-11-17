@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     public BotonComportamiento b_bien;
     public BotonComportamiento b_mal;
+    public BotonComportamiento b_usar;
     public BotonComportamiento b_menu;
     public BotonComportamiento b_atras;
     public BotonComportamiento b_salir;
@@ -43,7 +44,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         puntos = 0;
-        tiempo = 30;
+        tiempo = 120;
         IAexiste = false;
         reloj.inicio(tiempo);
         reloj.final = false;

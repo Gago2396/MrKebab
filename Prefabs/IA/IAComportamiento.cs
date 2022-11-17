@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class IAComportamiento : MonoBehaviour
 {
-
+    public List<string> ingredientes;
     public Transform spawn;
     public Transform parada;
     public Transform fin;
@@ -24,10 +24,15 @@ public class IAComportamiento : MonoBehaviour
     public bool esta_fin = false;
     public bool pedidoHecho;
     public bool finTiempo;
+    public bool pedidoBien;
+    public bool pedidoMal;
 
     // Start is called before the first frame update
     void Start()
     {
+        pedidoBien = false;
+        pedidoMal = false;
+        ingredientes = new List<string>();
         muestraPedido = gameObject.GetComponentInChildren<TMP_Text>();
         pedidoHecho = false;
         manager = GameObject.FindGameObjectWithTag("manager").GetComponent<GameManager>();
@@ -36,13 +41,13 @@ public class IAComportamiento : MonoBehaviour
         switch (manager.level)
         {
             case 1:
-                muestraPedido.text = pedidos.pedido(1);
+                muestraPedido.text = pedidos.pedido(1, out ingredientes);
                 break;
             case 2:
-                muestraPedido.text = pedidos.pedido(2);
+                muestraPedido.text = pedidos.pedido(2, out ingredientes);
                 break;
             case 3:
-                muestraPedido.text = pedidos.pedido(3);
+                muestraPedido.text = pedidos.pedido(3, out ingredientes);
                 break;
             default:
                 muestraPedido.text = "Error!!";
@@ -65,13 +70,13 @@ public class IAComportamiento : MonoBehaviour
                 }
                 if (esta_barra && !pedidoHecho)
                 {
-                    if (Input.GetKeyDown(KeyCode.Alpha1))
+                    if (Input.GetKeyDown(KeyCode.Alpha1) || pedidoBien || manager.b_bien.pressed)
                     {
                         puntos = 100;
                         pedidoHecho = true;
                         EnviaPuntos();
                     }
-                    if (Input.GetKeyDown(KeyCode.Alpha2))
+                    if (Input.GetKeyDown(KeyCode.Alpha2) || pedidoMal || manager.b_bien.pressed)
                     {
                         puntos = -100;
                         pedidoHecho = true;

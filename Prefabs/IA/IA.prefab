@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: -8534199778461161829}
   m_Layer: 0
   m_Name: IA
-  m_TagString: Untagged
+  m_TagString: IA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -209,6 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b36fbfcd786e74e99aeb9ce0170ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ingredientes: []
   spawn: {fileID: 3492303556266240229}
   parada: {fileID: 3492303556773639017}
   fin: {fileID: 3492303554983085046}
@@ -218,13 +219,15 @@ MonoBehaviour:
   manager: {fileID: 0}
   reloj: {fileID: 3492303556447854121}
   pedidos: {fileID: -8534199778461161829}
-  tiempoParcial: 5
+  tiempoParcial: 20
   velocidad: 4
   puntos: 0
   esta_barra: 0
   esta_fin: 0
   pedidoHecho: 0
   finTiempo: 0
+  pedidoBien: 0
+  pedidoMal: 0
 --- !u!114 &3492303556447854121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,9 +267,10 @@ GameObject:
   - component: {fileID: 3492303556463268708}
   - component: {fileID: 3492303556463268709}
   - component: {fileID: 3492303556463268710}
+  - component: {fileID: 8582299038273643515}
   m_Layer: 0
   m_Name: Cuerpo
-  m_TagString: Untagged
+  m_TagString: IA
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -352,6 +356,20 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &8582299038273643515
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3492303556463268711}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 3.4716039
+  m_Direction: 2
+  m_Center: {x: -3.7786157e-15, y: 0, z: 1.2658962}
 --- !u!1 &3492303556773639018
 GameObject:
   m_ObjectHideFlags: 0

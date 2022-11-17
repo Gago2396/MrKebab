@@ -947,7 +947,7 @@ GameObject:
   - component: {fileID: 142036734}
   - component: {fileID: 142036737}
   m_Layer: 0
-  m_Name: Picante
+  m_Name: Salsa Picante
   m_TagString: ingrediente
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1060,7 +1060,7 @@ GameObject:
   - component: {fileID: 155532075}
   - component: {fileID: 155532078}
   m_Layer: 0
-  m_Name: Blanca
+  m_Name: Salsa Blanca
   m_TagString: ingrediente
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2364,6 +2364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   b_bien: {fileID: 1259311592}
   b_mal: {fileID: 544235731}
+  b_usar: {fileID: 548170533}
   b_menu: {fileID: 2040562195}
   b_atras: {fileID: 758778249}
   b_salir: {fileID: 249269969}
@@ -2687,6 +2688,147 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8518b050b868f9b41bfa8d3db4cc9001, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &548170531
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 615692249}
+    m_Modifications:
+    - target: {fileID: 6847846066110755792, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755806, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_Name
+      value: Usar
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 381.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 49.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066611788816, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_Name
+      value: UseTxt
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066611788818, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_text
+      value: Use
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066611788818, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066611788818, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+    - target: {fileID: 6847846066611788818, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6847846066611788818, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+--- !u!224 &548170532 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6847846066110755807, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+  m_PrefabInstance: {fileID: 548170531}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &548170533 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6847846066110755795, guid: f1d67290e143b9d4d870481059a92f26, type: 3}
+  m_PrefabInstance: {fileID: 548170531}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8518b050b868f9b41bfa8d3db4cc9001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &613903529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2844,6 +2986,7 @@ RectTransform:
   - {fileID: 2040562191}
   - {fileID: 1259311588}
   - {fileID: 544235730}
+  - {fileID: 548170532}
   m_Father: {fileID: 676260984}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7024,7 +7167,7 @@ GameObject:
   - component: {fileID: 1468003141}
   - component: {fileID: 1468003144}
   m_Layer: 0
-  m_Name: Barbacoa
+  m_Name: Salsa Barbacoa
   m_TagString: ingrediente
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7692,12 +7835,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1515635118418060919, guid: 53711e0b79e8f7d41804f5ad8cbb0585, type: 3}
+      propertyPath: m_Height
+      value: 2.2032704
+      objectReference: {fileID: 0}
+    - target: {fileID: 1515635118418060919, guid: 53711e0b79e8f7d41804f5ad8cbb0585, type: 3}
       propertyPath: m_Radius
-      value: 0.5000001
+      value: 0.67941123
       objectReference: {fileID: 0}
     - target: {fileID: 1515635118418060919, guid: 53711e0b79e8f7d41804f5ad8cbb0585, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1515635118418060919, guid: 53711e0b79e8f7d41804f5ad8cbb0585, type: 3}
       propertyPath: m_Center.x
@@ -7711,6 +7858,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5285636898777399056, guid: 53711e0b79e8f7d41804f5ad8cbb0585, type: 3}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 486750936}
     - target: {fileID: 5285636898777399058, guid: 53711e0b79e8f7d41804f5ad8cbb0585, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7930,7 +8081,7 @@ GameObject:
   - component: {fileID: 1736617655}
   - component: {fileID: 1736617658}
   m_Layer: 0
-  m_Name: Ternera
+  m_Name: Carne de Ternera
   m_TagString: ingrediente
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8304,7 +8455,7 @@ GameObject:
   - component: {fileID: 1869826656}
   - component: {fileID: 1869826659}
   m_Layer: 0
-  m_Name: Pollo
+  m_Name: Carne de Pollo
   m_TagString: ingrediente
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

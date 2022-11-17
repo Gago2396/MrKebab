@@ -56,10 +56,10 @@ public class MinionMoviment : MonoBehaviour
             b_toca_sostre = false;
             v3_l_velocitat = Vector3.zero;
                                     
-            //calcul direccio
-            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || joystickMov.Vertical > 0)
+            //calculo direccion
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || joystickMov.Vertical > 0.2f)
                 v3_l_velocitat += Vector3.forward;
-            if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) || joystickMov.Vertical < 0)
+            if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow) || joystickMov.Vertical < -0.2f)
                 v3_l_velocitat += Vector3.back;
             if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || joystickMov.Horizontal > 0.2f)
                 v3_l_velocitat += Vector3.right;
@@ -71,7 +71,7 @@ public class MinionMoviment : MonoBehaviour
 
             v3_l_velocitat = v3_l_velocitat.normalized;
 
-            // calcul tamany
+            // calculo tamaño
             v3_l_velocitat = v3_l_velocitat * f_velocitat;
 
             if (Input.GetKey(KeyCode.Space) || b_salta.pressed)
@@ -110,7 +110,7 @@ public class MinionMoviment : MonoBehaviour
 
             if ((cc_minion.collisionFlags & CollisionFlags.Sides) != 0)
             {
-                v3_l_velocitat = new Vector3(-v3_l_velocitat.x/3f, 0f, -v3_l_velocitat.z /3f);
+                //v3_l_velocitat = new Vector3(-v3_l_velocitat.x/3f, 0f, -v3_l_velocitat.z /3f);
             }
 
             //gravetat de global a local
